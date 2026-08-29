@@ -70,6 +70,22 @@ omarchy restart shell
 
 ---
 
+## 🗑️ Removal & Uninstallation
+
+To cleanly remove the plugin and all its configurations:
+
+```bash
+omarchy plugin remove gladimdim.hardware.info --yes
+```
+
+Or to temporarily disable it without deleting:
+
+```bash
+omarchy plugin disable gladimdim.hardware.info
+```
+
+---
+
 ## ⌨️ Controls & Shortcuts
 
 | Action | Control |
