@@ -1,4 +1,4 @@
-# Omarchy Hardware Details Plugin (`gladimdim.hardware`)
+# Omarchy Hardware Details Plugin (`gladimdim.hardware.info`)
 
 An elegant, native hardware monitor and system inspection plugin for the [Omarchy](https://github.com/omarchy/omarchy) status bar.
 
@@ -52,19 +52,19 @@ An elegant, native hardware monitor and system inspection plugin for the [Omarch
 ### Option 1: Via Omarchy Plugin Manager (Recommended)
 
 ```bash
-omarchy plugin add https://github.com/gladimdim/omarchy-hardware --enable
+omarchy plugin add https://github.com/gladimdim/omarchy-hardware-info-plugin --enable
 ```
 
 To place it specifically next to your system tray in `~/.config/omarchy/shell.json`:
 ```bash
-omarchy plugin enable gladimdim.hardware --after gladimdim.tray
+omarchy plugin enable gladimdim.hardware.info --after gladimdim.tray
 ```
 
 ### Option 2: Manual Clone
 
 ```bash
-git clone https://github.com/gladimdim/omarchy-hardware ~/.config/omarchy/plugins/gladimdim.hardware
-omarchy plugin enable gladimdim.hardware
+git clone https://github.com/gladimdim/omarchy-hardware-info-plugin ~/.config/omarchy/plugins/gladimdim.hardware.info
+omarchy plugin enable gladimdim.hardware.info
 omarchy restart shell
 ```
 
@@ -74,7 +74,7 @@ omarchy restart shell
 
 | Action | Control |
 | :--- | :--- |
-| **Toggle Panel** | Left-click bar icon or `omarchy-shell gladimdim.hardware toggle` |
+| **Toggle Panel** | Left-click bar icon or `omarchy-shell gladimdim.hardware.info toggle` |
 | **Refresh Stats** | Right-click bar icon or press `r` |
 | **Switch Tabs** | Number keys `1`–`6` or `←` / `→` arrow keys |
 | **Copy Hardware JSON** | Press `c` or click the clipboard button |

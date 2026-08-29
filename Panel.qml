@@ -7,8 +7,8 @@ import qs.Ui
 
 Panel {
   id: root
-  moduleName: "gladimdim.hardware"
-  ipcTarget: "gladimdim.hardware"
+  moduleName: "gladimdim.hardware.info"
+  ipcTarget: "gladimdim.hardware.info"
   manageIpc: false
 
   implicitWidth: button.implicitWidth
@@ -100,7 +100,7 @@ Panel {
   }
 
   IpcHandler {
-    target: "gladimdim.hardware"
+    target: "gladimdim.hardware.info"
     function open(): void { root.open() }
     function close(): void { root.close() }
     function show(): void { root.open() }
