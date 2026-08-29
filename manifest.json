@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "gladimdim.hardware",
+  "name": "Hardware Details",
+  "version": "1.0.0",
+  "author": "Dmytro Gladkyi",
+  "license": "MIT",
+  "description": "Full hardware inspection and monitor for Omarchy Linux — CPU, RAM, Motherboard, Storage/SSD, Devices, and CPU Capabilities/Mitigations.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Hardware Details",
+    "description": "Hardware monitor and system information table",
+    "category": "System",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
