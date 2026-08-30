@@ -120,6 +120,7 @@ Panel {
         anchors.centerIn: parent
         spacing: Style.space(8)
         Text {
+          textFormat: Text.PlainText
           anchors.horizontalCenter: parent.horizontalCenter
           text: ""
           color: root.accent
@@ -127,6 +128,7 @@ Panel {
           font.pixelSize: Style.font.display
         }
         Text {
+          textFormat: Text.PlainText
           anchors.horizontalCenter: parent.horizontalCenter
           text: "Probing hardware devices..."
           color: root.dim
@@ -245,6 +247,7 @@ Panel {
             spacing: Style.space(8)
 
             Text {
+              textFormat: Text.PlainText
               text: "Core " + index
               width: Style.space(60)
               color: root.dim
@@ -271,6 +274,7 @@ Panel {
             }
 
             Text {
+              textFormat: Text.PlainText
               text: modelData + " MHz"
               width: Style.space(60)
               horizontalAlignment: Text.AlignRight
@@ -305,6 +309,7 @@ Panel {
           width: parent.width
           implicitHeight: Math.max(ramLabel.implicitHeight, ramVal.implicitHeight)
           Text {
+            textFormat: Text.PlainText
             id: ramLabel
             anchors.left: parent.left
             anchors.verticalCenter: parent.verticalCenter
@@ -315,6 +320,7 @@ Panel {
             font.pixelSize: Style.font.body
           }
           Text {
+            textFormat: Text.PlainText
             id: ramVal
             anchors.right: parent.right
             anchors.verticalCenter: parent.verticalCenter
@@ -356,6 +362,7 @@ Panel {
           width: parent.width
           implicitHeight: Math.max(swapLabel.implicitHeight, swapVal.implicitHeight)
           Text {
+            textFormat: Text.PlainText
             id: swapLabel
             anchors.left: parent.left
             anchors.verticalCenter: parent.verticalCenter
@@ -366,6 +373,7 @@ Panel {
             font.pixelSize: Style.font.body
           }
           Text {
+            textFormat: Text.PlainText
             id: swapVal
             anchors.right: parent.right
             anchors.verticalCenter: parent.verticalCenter
@@ -401,6 +409,7 @@ Panel {
 
       CardBox {
         Text {
+          textFormat: Text.PlainText
           visible: root.hwData && root.hwData.memory.array_summary !== ""
           text: root.hwData ? root.hwData.memory.array_summary : ""
           color: root.dim
@@ -417,6 +426,7 @@ Panel {
             spacing: Style.space(8)
 
             Text {
+              textFormat: Text.PlainText
               text: modelData.slot
               width: parent.width * 0.40
               color: root.foreground
@@ -426,6 +436,7 @@ Panel {
             }
 
             Text {
+              textFormat: Text.PlainText
               text: modelData.type + " • " + modelData.size
               width: parent.width * 0.32
               color: root.dim
@@ -434,6 +445,7 @@ Panel {
             }
 
             Text {
+              textFormat: Text.PlainText
               text: modelData.speed
               width: parent.width * 0.24
               horizontalAlignment: Text.AlignRight
@@ -471,6 +483,7 @@ Panel {
             width: parent.width
             implicitHeight: Math.max(modelTag.implicitHeight, sizeTag.implicitHeight)
             Text {
+              textFormat: Text.PlainText
               id: modelTag
               text: "󰋊 " + modelData.model
               color: root.foreground
@@ -484,6 +497,7 @@ Panel {
               elide: Text.ElideRight
             }
             Text {
+              textFormat: Text.PlainText
               id: sizeTag
               text: modelData.size
               color: root.accent
@@ -524,6 +538,7 @@ Panel {
               width: parent.width
               implicitHeight: Math.max(mpLabel.implicitHeight, mpUsage.implicitHeight)
               Text {
+                textFormat: Text.PlainText
                 id: mpLabel
                 anchors.left: parent.left
                 anchors.verticalCenter: parent.verticalCenter
@@ -534,6 +549,7 @@ Panel {
                 font.pixelSize: Style.font.bodySmall
               }
               Text {
+                textFormat: Text.PlainText
                 id: mpUsage
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
@@ -565,6 +581,7 @@ Panel {
               width: parent.width
               implicitHeight: Math.max(devDesc.implicitHeight, freeDesc.implicitHeight)
               Text {
+                textFormat: Text.PlainText
                 id: devDesc
                 anchors.left: parent.left
                 anchors.verticalCenter: parent.verticalCenter
@@ -574,6 +591,7 @@ Panel {
                 font.pixelSize: Style.font.caption
               }
               Text {
+                textFormat: Text.PlainText
                 id: freeDesc
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
@@ -745,6 +763,7 @@ Panel {
             spacing: Style.space(6)
 
             Text {
+              textFormat: Text.PlainText
               text: modelData.name
               width: parent.width * 0.35
               color: root.foreground
@@ -755,6 +774,7 @@ Panel {
             }
 
             Text {
+              textFormat: Text.PlainText
               text: modelData.status
               width: parent.width * 0.62
               color: modelData.is_mitigated ? root.accent : root.urgent
@@ -820,6 +840,7 @@ Panel {
           implicitHeight: Math.max(heroIcon.implicitHeight, heroInfo.implicitHeight, heroActions.implicitHeight)
 
           Text {
+            textFormat: Text.PlainText
             id: heroIcon
             text: ""
             color: root.accent
@@ -839,6 +860,7 @@ Panel {
             spacing: Style.space(2)
 
             Text {
+              textFormat: Text.PlainText
               text: "Hardware Details"
               color: root.foreground
               font.family: root.fontFamily
@@ -847,6 +869,7 @@ Panel {
             }
 
             Text {
+              textFormat: Text.PlainText
               text: {
                 if (!root.hwData) return "Scanning hardware..."
                 var dmi = root.hwData.dmi || {}
@@ -945,6 +968,7 @@ Panel {
           border.color: root.accent
 
           Text {
+            textFormat: Text.PlainText
             anchors.centerIn: parent
             text: root.copyStatus
             color: root.accent
@@ -1038,12 +1062,14 @@ Panel {
         anchors.horizontalCenter: parent.horizontalCenter
         spacing: Style.space(4)
         Text {
+          textFormat: Text.PlainText
           text: icon
           color: highlightColor
           font.family: root.fontFamily
           font.pixelSize: Style.font.caption
         }
         Text {
+          textFormat: Text.PlainText
           text: value
           color: highlightColor
           font.family: root.fontFamily
@@ -1053,6 +1079,7 @@ Panel {
       }
 
       Text {
+        textFormat: Text.PlainText
         anchors.horizontalCenter: parent.horizontalCenter
         text: label
         color: root.dim
@@ -1090,6 +1117,7 @@ Panel {
     implicitHeight: Math.max(pairLabel.implicitHeight, pairVal.implicitHeight)
 
     Text {
+      textFormat: Text.PlainText
       id: pairLabel
       text: pairItem.label
       color: root.dim
@@ -1103,6 +1131,7 @@ Panel {
     }
 
     Text {
+      textFormat: Text.PlainText
       id: pairVal
       text: pairItem.value
       color: root.foreground
@@ -1137,6 +1166,7 @@ Panel {
       spacing: Style.space(4)
 
       Text {
+        textFormat: Text.PlainText
         text: supported ? "✓" : "✗"
         color: supported ? root.accent : root.dim
         font.family: root.fontFamily
@@ -1145,6 +1175,7 @@ Panel {
       }
 
       Text {
+        textFormat: Text.PlainText
         text: name
         color: supported ? root.foreground : root.dim
         font.family: root.fontFamily
