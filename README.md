@@ -110,6 +110,8 @@ Standard packages included on most Omarchy / Arch installations:
 
 ---
 
+After tagging a new release, re-verify the marketplace listing for the exact new commit. See [AGENTS.md](AGENTS.md).
+
 ## 📄 License
 
 MIT License © 2026 Dmytro Gladkyi
