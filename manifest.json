@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "gladimdim.hardware.info",
   "name": "Hardware Details",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Dmytro Gladkyi",
   "license": "MIT",
   "description": "Full hardware inspection and monitor for Omarchy Linux — CPU, RAM, Motherboard, Storage/SSD, Devices, and CPU Capabilities/Mitigations.",
